@@ -51,7 +51,12 @@
       </el-aside>
       <el-container>
         <el-header>Lirins系统</el-header>
-        <el-main>Main</el-main>
+        <el-main>
+          <div class="main-body">
+<!--            可变的内容使用router-view-->
+            <router-view/>
+          </div>
+        </el-main>
       </el-container>
     </el-container>
   </div>
@@ -111,9 +116,18 @@ export default {
   background-color: #E9EEF3;
   color: #444;
   text-align: center;
+  padding: 0;
+  overflow: hidden;
+}
+.main-body{
+  background-color: #ffffff;
+  height: 100%;
+  margin: 10px 0 0 10px;
+  padding: 20px 0 0 0 ;
 }
 
 .el-container {
   height: 100%;
+
 }
 </style>
