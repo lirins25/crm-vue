@@ -71,9 +71,9 @@ export default {
     };
   },
 }
-</script>
 
-<style scoped>
+</script>
+<style lang="less">
 .el-menu-vertical-demo:not(.el-menu--collapse) {
   width: 200px;
   min-height: 400px;
@@ -85,11 +85,10 @@ export default {
 }
 
 .scrollerbar {
-  height: calc(100% - 70px);
+  height: calc(100% - 60px);
 }
-.el-scrollbar__bar,.el-scrollbar__thumb{
-  display: none;
-  is-horizontal:false;
+.el-scrollbar__wrap{
+  overflow:hidden ;
 }
 
 .el-header {
@@ -108,6 +107,7 @@ export default {
   background-color: #fff;
   color: #444;
   width: auto;
+  overflow: hidden;
   /*text-align: center;*/
   /*line-height: 200px;*/
 }
@@ -115,7 +115,6 @@ export default {
 .el-main {
   background-color: #E9EEF3;
   color: #444;
-  text-align: center;
   padding: 0;
   overflow: hidden;
 }
