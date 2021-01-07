@@ -1,4 +1,8 @@
-let obj={
-
+export default {
+    name: "index",
+    data() {
+        return {
+            isCollapse: true
+        };
+    },
 }
-export default obj;

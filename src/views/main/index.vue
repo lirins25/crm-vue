@@ -13,8 +13,7 @@
           <el-menu
               default-active="1"
               class="el-menu-vertical-demo"
-              @open="handleOpen"
-              @close="handleClose">
+          >
             <!--          el-submenu 表示二级导航可以展开-->
 
             <!--          不能展开的为 el-menu
@@ -50,7 +49,7 @@
         </el-scrollbar>
       </el-aside>
       <el-container>
-        <el-header>Lirins系统</el-header>
+        <el-header>但愿老死电脑间，不愿鞠躬老板前；奔驰宝马贵者趣，公交自行程序员。别人笑我忒疯癫，我笑自己命太贱；不见满街漂亮妹，哪个归得程序员？</el-header>
         <el-main>
           <div class="main-body">
 <!--            可变的内容使用router-view-->
@@ -62,71 +61,10 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "index",
-  data() {
-    return {
-      isCollapse: true
-    };
-  },
-}
+<script src="./index.js">
+
 
 </script>
-<style lang="less">
-.el-menu-vertical-demo:not(.el-menu--collapse) {
-  width: 200px;
-  min-height: 400px;
-}
+<style lang="less" src="./index.less">
 
-.main-box {
-  height: 100%;
-  width: 100%;
-}
-
-.scrollerbar {
-  height: calc(100% - 60px);
-}
-.el-scrollbar__wrap{
-  overflow:hidden ;
-}
-
-.el-header {
-  background-color: #B3C0D1;
-  color: #333;
-  text-align: center;
-  line-height: 60px;
-}
-
-.title-wrapper {
-  line-height: 60px;
-  background-color: #B3C0D1;
-}
-
-.el-aside {
-  background-color: #fff;
-  color: #444;
-  width: auto;
-  overflow: hidden;
-  /*text-align: center;*/
-  /*line-height: 200px;*/
-}
-
-.el-main {
-  background-color: #E9EEF3;
-  color: #444;
-  padding: 0;
-  overflow: hidden;
-}
-.main-body{
-  background-color: #ffffff;
-  height: 100%;
-  margin: 10px 0 0 10px;
-  padding: 20px 0 0 0 ;
-}
-
-.el-container {
-  height: 100%;
-
-}
 </style>
