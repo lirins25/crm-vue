@@ -51,9 +51,9 @@ const routes = [
                 component: () => import('../views/category/index.vue')
             },
             {
-                path: 'good',
-                name: 'good',
-                component: () => import('../views/good/index.vue')
+                path: 'saleOrderReceive',
+                name: 'saleOrderReceive',
+                component: () => import('../views/saleOrderReceive/index.vue')
             }
         ],
     }
