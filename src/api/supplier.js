@@ -11,6 +11,7 @@ let supplier = {
     /**
      *  findById
      */
+
     findById(id) {
         return axios.get(`supplier/${id}`)
     },
