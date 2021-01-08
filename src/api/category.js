@@ -18,7 +18,7 @@ let category = {
         return axios.post(`category`, entity);
     },
     updateEntity(entity) {
-        return axios.post(`category`, entity);
+        return axios.put(`category`, entity);
     },
     deleteByIds(ids) {
         return axios.delete(`category/${ids}`);

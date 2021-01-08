@@ -18,7 +18,7 @@ let supplier = {
         return axios.post(`supplier`, entity);
     },
     updateEntity(entity) {
-        return axios.post(`supplier`, entity);
+        return axios.put(`supplier`, entity);
     },
     deleteByIds(ids) {
         return axios.delete(`supplier/${ids}`);

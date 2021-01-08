@@ -18,7 +18,7 @@ let brand = {
         return axios.post(`brand`, entity);
     },
     updateEntity(entity) {
-        return axios.post(`brand`, entity);
+        return axios.put(`brand`, entity);
     },
     deleteByIds(ids) {
         return axios.delete(`brand/${ids}`);
